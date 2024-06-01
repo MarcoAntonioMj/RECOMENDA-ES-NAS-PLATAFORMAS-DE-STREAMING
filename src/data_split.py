@@ -21,7 +21,7 @@ def save_splits(train_df, val_df, test_df, base_path):
 
 if __name__ == "__main__":
     processed_data_path = 'C:/Users/marco/OneDrive/Área de Trabalho/A3-Dados/RECOMENDA-ES-NAS-PLATAFORMAS-DE-STREAMING/data/processed/songs_processed.csv'
-    splits_path = 'C:/Users/marco/OneDrive/Área de Trabalho/A3-Dados/RECOMENDA-ES-NAS-PLATAFORMAS-DE-STREAMING/data/splits'
+    splits_path = '../data/splits'
     df = load_processed_data(processed_data_path)
     train_df, val_df, test_df = split_data(df)
     save_splits(train_df, val_df, test_df, splits_path)
